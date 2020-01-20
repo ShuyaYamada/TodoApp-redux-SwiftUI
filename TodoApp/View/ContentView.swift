@@ -72,7 +72,10 @@ struct ContentView: View {
                                   
                                     self.selectedTodo = todo
                                     
-                                    self.isUpdatingMode.toggle()
+                                    if !self.isEdit {
+                                        
+                                        self.isUpdatingMode.toggle()
+                                    }
                                     
                             }.sheet(isPresented: self.$isUpdatingMode) {
                                 
