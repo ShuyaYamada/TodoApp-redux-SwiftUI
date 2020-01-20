@@ -14,6 +14,14 @@
 		9E54D6FA23D58B6F0006E4B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E54D6F923D58B6F0006E4B2 /* Assets.xcassets */; };
 		9E54D6FD23D58B6F0006E4B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E54D6FC23D58B6F0006E4B2 /* Preview Assets.xcassets */; };
 		9E54D70023D58B6F0006E4B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E54D6FE23D58B6F0006E4B2 /* LaunchScreen.storyboard */; };
+		9E54D70823D58BB80006E4B2 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54D70723D58BB80006E4B2 /* Todo.swift */; };
+		9E54D70A23D58BEF0006E4B2 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54D70923D58BEF0006E4B2 /* AppState.swift */; };
+		9E54D70C23D58C1E0006E4B2 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54D70B23D58C1E0006E4B2 /* AppAction.swift */; };
+		9E54D70E23D58C6A0006E4B2 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54D70D23D58C6A0006E4B2 /* AppReducer.swift */; };
+		9E54D71023D58D4C0006E4B2 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54D70F23D58D4C0006E4B2 /* AppStore.swift */; };
+		9E54D71323D591C10006E4B2 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54D71223D591C10006E4B2 /* TodoCell.swift */; };
+		9E54D71523D593200006E4B2 /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54D71423D593200006E4B2 /* AddTodoView.swift */; };
+		9E54D71723D595200006E4B2 /* UpdateTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54D71623D595200006E4B2 /* UpdateTodoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		9E54D6FC23D58B6F0006E4B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9E54D6FF23D58B6F0006E4B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E54D70123D58B6F0006E4B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E54D70723D58BB80006E4B2 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		9E54D70923D58BEF0006E4B2 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		9E54D70B23D58C1E0006E4B2 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		9E54D70D23D58C6A0006E4B2 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		9E54D70F23D58D4C0006E4B2 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		9E54D71223D591C10006E4B2 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		9E54D71423D593200006E4B2 /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
+		9E54D71623D595200006E4B2 /* UpdateTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTodoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +76,8 @@
 			children = (
 				9E54D6F023D58B690006E4B2 /* AppDelegate.swift */,
 				9E54D6F223D58B690006E4B2 /* SceneDelegate.swift */,
-				9E54D6F723D58B690006E4B2 /* ContentView.swift */,
+				9E54D71823D59D1B0006E4B2 /* View */,
+				9E54D71123D5918E0006E4B2 /* redux */,
 				9E54D6F923D58B6F0006E4B2 /* Assets.xcassets */,
 				9E54D6FE23D58B6F0006E4B2 /* LaunchScreen.storyboard */,
 				9E54D70123D58B6F0006E4B2 /* Info.plist */,
@@ -76,6 +93,29 @@
 				9E54D6FC23D58B6F0006E4B2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9E54D71123D5918E0006E4B2 /* redux */ = {
+			isa = PBXGroup;
+			children = (
+				9E54D70723D58BB80006E4B2 /* Todo.swift */,
+				9E54D70923D58BEF0006E4B2 /* AppState.swift */,
+				9E54D70B23D58C1E0006E4B2 /* AppAction.swift */,
+				9E54D70D23D58C6A0006E4B2 /* AppReducer.swift */,
+				9E54D70F23D58D4C0006E4B2 /* AppStore.swift */,
+			);
+			path = redux;
+			sourceTree = "<group>";
+		};
+		9E54D71823D59D1B0006E4B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9E54D6F723D58B690006E4B2 /* ContentView.swift */,
+				9E54D71223D591C10006E4B2 /* TodoCell.swift */,
+				9E54D71423D593200006E4B2 /* AddTodoView.swift */,
+				9E54D71623D595200006E4B2 /* UpdateTodoView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +189,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E54D70C23D58C1E0006E4B2 /* AppAction.swift in Sources */,
 				9E54D6F123D58B690006E4B2 /* AppDelegate.swift in Sources */,
 				9E54D6F623D58B690006E4B2 /* TodoApp.xcdatamodeld in Sources */,
+				9E54D71323D591C10006E4B2 /* TodoCell.swift in Sources */,
 				9E54D6F823D58B690006E4B2 /* ContentView.swift in Sources */,
+				9E54D70A23D58BEF0006E4B2 /* AppState.swift in Sources */,
+				9E54D71523D593200006E4B2 /* AddTodoView.swift in Sources */,
 				9E54D6F323D58B690006E4B2 /* SceneDelegate.swift in Sources */,
+				9E54D71023D58D4C0006E4B2 /* AppStore.swift in Sources */,
+				9E54D70E23D58C6A0006E4B2 /* AppReducer.swift in Sources */,
+				9E54D70823D58BB80006E4B2 /* Todo.swift in Sources */,
+				9E54D71723D595200006E4B2 /* UpdateTodoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShuyaYamada.TodoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShuyaYamada.TodoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
